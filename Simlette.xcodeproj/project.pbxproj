@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344F49D21DF3BC3D00107847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F49D11DF3BC3D00107847 /* AppDelegate.swift */; };
+		344F49D41DF3BC3D00107847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F49D31DF3BC3D00107847 /* ViewController.swift */; };
+		344F49D71DF3BC3D00107847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344F49D51DF3BC3D00107847 /* Main.storyboard */; };
+		344F49D91DF3BC3D00107847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344F49D81DF3BC3D00107847 /* Assets.xcassets */; };
+		344F49DC1DF3BC3D00107847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344F49DA1DF3BC3D00107847 /* LaunchScreen.storyboard */; };
+		344F49E71DF3BC3D00107847 /* SimletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F49E61DF3BC3D00107847 /* SimletteTests.swift */; };
+		344F49F51DF3C13C00107847 /* OmletteIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F49F41DF3C13C00107847 /* OmletteIngredients.swift */; };
+		486631F71DF4140A00933817 /* OmeletteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486631F61DF4140A00933817 /* OmeletteRequest.swift */; };
+		486631FB1DF4149300933817 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486631FA1DF4149300933817 /* Parse.framework */; };
+		486631FD1DF4149A00933817 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486631FC1DF4149A00933817 /* Bolts.framework */; };
+		486631FF1DF4159100933817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486631FE1DF4159100933817 /* AudioToolbox.framework */; };
+		486632011DF4159B00933817 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486632001DF4159B00933817 /* CFNetwork.framework */; };
+		486632031DF415A400933817 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486632021DF415A400933817 /* CoreGraphics.framework */; };
+		486632051DF415AE00933817 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486632041DF415AE00933817 /* CoreLocation.framework */; };
+		486632071DF415B900933817 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486632061DF415B900933817 /* QuartzCore.framework */; };
+		486632091DF415C400933817 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486632081DF415C400933817 /* Security.framework */; };
+		4866320B1DF415CD00933817 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4866320A1DF415CD00933817 /* StoreKit.framework */; };
+		4866320D1DF415D600933817 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4866320C1DF415D600933817 /* SystemConfiguration.framework */; };
+		4866320F1DF415E200933817 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4866320E1DF415E200933817 /* libz.tbd */; };
+		486632111DF415F100933817 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 486632101DF415F100933817 /* libsqlite3.tbd */; };
+		486632141DF4166700933817 /* parseImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 486632131DF4166700933817 /* parseImport.m */; };
+		486632161DF4174100933817 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486632151DF4174100933817 /* ParseUI.framework */; };
+		4866321A1DF41C5E00933817 /* ChefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486632191DF41C5E00933817 /* ChefViewController.swift */; };
+		4866321C1DF4597000933817 /* ingredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866321B1DF4597000933817 /* ingredientsList.swift */; };
+		4866321E1DF4662E00933817 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866321D1DF4662E00933817 /* StudentViewController.swift */; };
+		486632201DF46E5E00933817 /* IngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866321F1DF46E5E00933817 /* IngredientsTableViewCell.swift */; };
+		486632241DF476EB00933817 /* opening.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 486632231DF476EB00933817 /* opening.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344F49E31DF3BC3D00107847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344F49C61DF3BC3D00107847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344F49CD1DF3BC3D00107847;
+			remoteInfo = Simlette;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344F49CE1DF3BC3D00107847 /* Simlette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simlette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344F49D11DF3BC3D00107847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		344F49D31DF3BC3D00107847 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		344F49D61DF3BC3D00107847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		344F49D81DF3BC3D00107847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		344F49DB1DF3BC3D00107847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		344F49DD1DF3BC3D00107847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344F49E21DF3BC3D00107847 /* SimletteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimletteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344F49E61DF3BC3D00107847 /* SimletteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimletteTests.swift; sourceTree = "<group>"; };
+		344F49E81DF3BC3D00107847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344F49F41DF3C13C00107847 /* OmletteIngredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmletteIngredients.swift; sourceTree = "<group>"; };
+		486631F61DF4140A00933817 /* OmeletteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmeletteRequest.swift; sourceTree = "<group>"; };
+		486631FA1DF4149300933817 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		486631FC1DF4149A00933817 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		486631FE1DF4159100933817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		486632001DF4159B00933817 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		486632021DF415A400933817 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		486632041DF415AE00933817 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		486632061DF415B900933817 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		486632081DF415C400933817 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4866320A1DF415CD00933817 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4866320C1DF415D600933817 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4866320E1DF415E200933817 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		486632101DF415F100933817 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		486632121DF4166700933817 /* Simlette-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simlette-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		486632131DF4166700933817 /* parseImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = parseImport.m; path = ../parseImport.m; sourceTree = "<group>"; };
+		486632151DF4174100933817 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		486632191DF41C5E00933817 /* ChefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefViewController.swift; sourceTree = "<group>"; };
+		4866321B1DF4597000933817 /* ingredientsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientsList.swift; sourceTree = "<group>"; };
+		4866321D1DF4662E00933817 /* StudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		4866321F1DF46E5E00933817 /* IngredientsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewCell.swift; sourceTree = "<group>"; };
+		486632231DF476EB00933817 /* opening.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opening.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344F49CB1DF3BC3D00107847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486632111DF415F100933817 /* libsqlite3.tbd in Frameworks */,
+				4866320F1DF415E200933817 /* libz.tbd in Frameworks */,
+				4866320D1DF415D600933817 /* SystemConfiguration.framework in Frameworks */,
+				4866320B1DF415CD00933817 /* StoreKit.framework in Frameworks */,
+				486632091DF415C400933817 /* Security.framework in Frameworks */,
+				486632071DF415B900933817 /* QuartzCore.framework in Frameworks */,
+				486632051DF415AE00933817 /* CoreLocation.framework in Frameworks */,
+				486632031DF415A400933817 /* CoreGraphics.framework in Frameworks */,
+				486632011DF4159B00933817 /* CFNetwork.framework in Frameworks */,
+				486631FF1DF4159100933817 /* AudioToolbox.framework in Frameworks */,
+				486631FD1DF4149A00933817 /* Bolts.framework in Frameworks */,
+				486631FB1DF4149300933817 /* Parse.framework in Frameworks */,
+				486632161DF4174100933817 /* ParseUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344F49DF1DF3BC3D00107847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344F49C51DF3BC3D00107847 = {
+			isa = PBXGroup;
+			children = (
+				486631F51DF413BF00933817 /* Frameworks */,
+				486631F41DF413B200933817 /* Model */,
+				344F49D01DF3BC3D00107847 /* Simlette */,
+				344F49E51DF3BC3D00107847 /* SimletteTests */,
+				344F49CF1DF3BC3D00107847 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344F49CF1DF3BC3D00107847 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344F49CE1DF3BC3D00107847 /* Simlette.app */,
+				344F49E21DF3BC3D00107847 /* SimletteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344F49D01DF3BC3D00107847 /* Simlette */ = {
+			isa = PBXGroup;
+			children = (
+				486632131DF4166700933817 /* parseImport.m */,
+				486632121DF4166700933817 /* Simlette-Bridging-Header.h */,
+				344F49D11DF3BC3D00107847 /* AppDelegate.swift */,
+				344F49D31DF3BC3D00107847 /* ViewController.swift */,
+				486632191DF41C5E00933817 /* ChefViewController.swift */,
+				4866321D1DF4662E00933817 /* StudentViewController.swift */,
+				4866321F1DF46E5E00933817 /* IngredientsTableViewCell.swift */,
+				344F49F41DF3C13C00107847 /* OmletteIngredients.swift */,
+				4866321B1DF4597000933817 /* ingredientsList.swift */,
+				344F49D51DF3BC3D00107847 /* Main.storyboard */,
+				344F49D81DF3BC3D00107847 /* Assets.xcassets */,
+				344F49DA1DF3BC3D00107847 /* LaunchScreen.storyboard */,
+				344F49F11DF3BC5500107847 /* Supporting Files */,
+				344F49DD1DF3BC3D00107847 /* Info.plist */,
+			);
+			path = Simlette;
+			sourceTree = "<group>";
+		};
+		344F49E51DF3BC3D00107847 /* SimletteTests */ = {
+			isa = PBXGroup;
+			children = (
+				344F49E61DF3BC3D00107847 /* SimletteTests.swift */,
+				344F49E81DF3BC3D00107847 /* Info.plist */,
+			);
+			path = SimletteTests;
+			sourceTree = "<group>";
+		};
+		344F49F11DF3BC5500107847 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				486632231DF476EB00933817 /* opening.jpg */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		486631F41DF413B200933817 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				486631F61DF4140A00933817 /* OmeletteRequest.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		486631F51DF413BF00933817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				486632151DF4174100933817 /* ParseUI.framework */,
+				486632101DF415F100933817 /* libsqlite3.tbd */,
+				4866320E1DF415E200933817 /* libz.tbd */,
+				4866320C1DF415D600933817 /* SystemConfiguration.framework */,
+				4866320A1DF415CD00933817 /* StoreKit.framework */,
+				486632081DF415C400933817 /* Security.framework */,
+				486632061DF415B900933817 /* QuartzCore.framework */,
+				486632041DF415AE00933817 /* CoreLocation.framework */,
+				486632021DF415A400933817 /* CoreGraphics.framework */,
+				486632001DF4159B00933817 /* CFNetwork.framework */,
+				486631FE1DF4159100933817 /* AudioToolbox.framework */,
+				486631FC1DF4149A00933817 /* Bolts.framework */,
+				486631FA1DF4149300933817 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		344F49CD1DF3BC3D00107847 /* Simlette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344F49EB1DF3BC3D00107847 /* Build configuration list for PBXNativeTarget "Simlette" */;
+			buildPhases = (
+				344F49CA1DF3BC3D00107847 /* Sources */,
+				344F49CB1DF3BC3D00107847 /* Frameworks */,
+				344F49CC1DF3BC3D00107847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simlette;
+			productName = Simlette;
+			productReference = 344F49CE1DF3BC3D00107847 /* Simlette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		344F49E11DF3BC3D00107847 /* SimletteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344F49EE1DF3BC3D00107847 /* Build configuration list for PBXNativeTarget "SimletteTests" */;
+			buildPhases = (
+				344F49DE1DF3BC3D00107847 /* Sources */,
+				344F49DF1DF3BC3D00107847 /* Frameworks */,
+				344F49E01DF3BC3D00107847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344F49E41DF3BC3D00107847 /* PBXTargetDependency */,
+			);
+			name = SimletteTests;
+			productName = SimletteTests;
+			productReference = 344F49E21DF3BC3D00107847 /* SimletteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344F49C61DF3BC3D00107847 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tingxiao Sun";
+				TargetAttributes = {
+					344F49CD1DF3BC3D00107847 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					344F49E11DF3BC3D00107847 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 344F49CD1DF3BC3D00107847;
+					};
+				};
+			};
+			buildConfigurationList = 344F49C91DF3BC3D00107847 /* Build configuration list for PBXProject "Simlette" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 344F49C51DF3BC3D00107847;
+			productRefGroup = 344F49CF1DF3BC3D00107847 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344F49CD1DF3BC3D00107847 /* Simlette */,
+				344F49E11DF3BC3D00107847 /* SimletteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344F49CC1DF3BC3D00107847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344F49DC1DF3BC3D00107847 /* LaunchScreen.storyboard in Resources */,
+				344F49D91DF3BC3D00107847 /* Assets.xcassets in Resources */,
+				486632241DF476EB00933817 /* opening.jpg in Resources */,
+				344F49D71DF3BC3D00107847 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344F49E01DF3BC3D00107847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344F49CA1DF3BC3D00107847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486632201DF46E5E00933817 /* IngredientsTableViewCell.swift in Sources */,
+				486631F71DF4140A00933817 /* OmeletteRequest.swift in Sources */,
+				344F49D41DF3BC3D00107847 /* ViewController.swift in Sources */,
+				4866321C1DF4597000933817 /* ingredientsList.swift in Sources */,
+				344F49D21DF3BC3D00107847 /* AppDelegate.swift in Sources */,
+				4866321E1DF4662E00933817 /* StudentViewController.swift in Sources */,
+				486632141DF4166700933817 /* parseImport.m in Sources */,
+				4866321A1DF41C5E00933817 /* ChefViewController.swift in Sources */,
+				344F49F51DF3C13C00107847 /* OmletteIngredients.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344F49DE1DF3BC3D00107847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344F49E71DF3BC3D00107847 /* SimletteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344F49E41DF3BC3D00107847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344F49CD1DF3BC3D00107847 /* Simlette */;
+			targetProxy = 344F49E31DF3BC3D00107847 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		344F49D51DF3BC3D00107847 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344F49D61DF3BC3D00107847 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		344F49DA1DF3BC3D00107847 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344F49DB1DF3BC3D00107847 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		344F49E91DF3BC3D00107847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		344F49EA1DF3BC3D00107847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		344F49EC1DF3BC3D00107847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Simlette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cos.Simlette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Simlette-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		344F49ED1DF3BC3D00107847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Simlette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cos.Simlette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Simlette-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		344F49EF1DF3BC3D00107847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimletteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cos.SimletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simlette.app/Simlette";
+			};
+			name = Debug;
+		};
+		344F49F01DF3BC3D00107847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimletteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cos.SimletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simlette.app/Simlette";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344F49C91DF3BC3D00107847 /* Build configuration list for PBXProject "Simlette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344F49E91DF3BC3D00107847 /* Debug */,
+				344F49EA1DF3BC3D00107847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344F49EB1DF3BC3D00107847 /* Build configuration list for PBXNativeTarget "Simlette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344F49EC1DF3BC3D00107847 /* Debug */,
+				344F49ED1DF3BC3D00107847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344F49EE1DF3BC3D00107847 /* Build configuration list for PBXNativeTarget "SimletteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344F49EF1DF3BC3D00107847 /* Debug */,
+				344F49F01DF3BC3D00107847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344F49C61DF3BC3D00107847 /* Project object */;
+}
